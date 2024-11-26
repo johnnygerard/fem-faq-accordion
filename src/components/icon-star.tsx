@@ -1,7 +1,7 @@
 export default function IconStar() {
   return (
     <svg
-      className="dt:w-[2.5rem] h-auto w-[1.5rem]"
+      className="h-auto w-[1.5rem] dt:w-[2.5rem]"
       width="24"
       height="25"
       viewBox="0 0 24 25"
