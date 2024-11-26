@@ -4,7 +4,7 @@ import IconStar from "@/components/icon-star";
 
 export default function Home() {
   return (
-    <div className="bg-white">
+    <div className="bg-white shadow-[0px_32px_56px_0px_rgba(80,0,118,0.10)]">
       <div className="flex items-center gap-[1.5rem]">
         <IconStar />
         <h1 className="text-display text-dark-purple">FAQs</h1>
