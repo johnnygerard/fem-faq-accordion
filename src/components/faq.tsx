@@ -5,8 +5,8 @@ import IconMinus from "@/components/icon-minus";
 export default function Faq({ question, answer }: Faq) {
   return (
     <details className="group" name="faq">
-      <summary className="flex list-none items-center justify-between">
-        <span className="pr-[1.5rem] text-title text-dark-purple dt:text-title-dt">
+      <summary className="flex cursor-pointer list-none items-center justify-between">
+        <span className="mr-[1.5rem] text-title text-dark-purple hover:text-pink dt:text-title-dt">
           {question}
         </span>
         <div className="shrink-0">
