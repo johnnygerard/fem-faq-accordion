@@ -7,6 +7,13 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    colors: {
+      "dark-purple": "#301534",
+      "light-pink": "#F8EEFF",
+      "pale-purple": "#8B6990",
+      pink: "#AD28EB",
+      white: "#FFFFFF",
+    },
     extend: {
       fontFamily: {
         sans: ["var(--font-work-sans)"],
