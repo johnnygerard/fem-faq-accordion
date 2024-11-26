@@ -7,6 +7,10 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    backgroundImage: {
+      "mobile-pattern": "url('/images/background-pattern-mobile.svg')",
+      "desktop-pattern": "url('/images/background-pattern-desktop.svg')",
+    },
     colors: {
       "dark-purple": "#301534",
       "light-pink": "#F8EEFF",
