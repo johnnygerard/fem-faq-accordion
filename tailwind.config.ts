@@ -19,7 +19,7 @@ export default {
       white: "#FFFFFF",
     },
     screens: {
-      dt: "768px",
+      dt: "48em",
     },
     extend: {
       fontFamily: {
