@@ -31,7 +31,7 @@ export default function RootLayout({
       <body
         className={`${workSans.variable} bg-light-pink font-sans text-body antialiased dt:text-body-dt`}
       >
-        <div className="bg-mobile-pattern dt:bg-desktop-pattern absolute -z-10 h-[14.5rem] w-full bg-cover bg-no-repeat dt:h-[20rem]" />
+        <div className="absolute -z-10 h-[14.5rem] w-full bg-mobile-pattern bg-cover bg-no-repeat dt:h-[20rem] dt:bg-desktop-pattern" />
         {children}
       </body>
     </html>
