@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${workSans.variable} antialiased font-sans`}>
+      <body className={`${workSans.variable} antialiased font-sans text-body`}>
         {children}
       </body>
     </html>
