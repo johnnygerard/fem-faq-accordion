@@ -11,7 +11,7 @@ export default function Home() {
       </div>
       <ul>
         {faqs.map((faq) => (
-          <li key={faq.question}>
+          <li key={faq.question} className="border-t first:border-none">
             <Faq {...faq} />
           </li>
         ))}
