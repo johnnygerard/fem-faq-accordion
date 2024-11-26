@@ -6,11 +6,15 @@ export default function Faq({ question, answer }: Faq) {
   return (
     <details className="group" name="faq">
       <summary className="flex list-none items-center justify-between">
-        <span className="text-title text-dark-purple">{question}</span>
-        <IconPlus className="group-open:hidden" />
-        <IconMinus className="hidden group-open:block" />
+        <span className="pr-[1.5rem] text-title text-dark-purple">
+          {question}
+        </span>
+        <div className="shrink-0">
+          <IconPlus className="group-open:hidden" />
+          <IconMinus className="hidden group-open:block" />
+        </div>
       </summary>
-      <p className="text-pale-purple">{answer}</p>
+      <p className="mt-[1.5rem] text-pale-purple">{answer}</p>
     </details>
   );
 }
