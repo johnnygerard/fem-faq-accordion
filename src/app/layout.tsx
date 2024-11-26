@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${workSans.variable} md:text-body-dt bg-light-pink font-sans text-body antialiased`}
+        className={`${workSans.variable} bg-light-pink font-sans text-body antialiased dt:text-body-dt`}
       >
         {children}
       </body>

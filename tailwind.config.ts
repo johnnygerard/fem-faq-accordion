@@ -14,6 +14,9 @@ export default {
       pink: "#AD28EB",
       white: "#FFFFFF",
     },
+    screens: {
+      dt: "768px",
+    },
     extend: {
       fontFamily: {
         sans: ["var(--font-work-sans)"],
