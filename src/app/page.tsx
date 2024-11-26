@@ -3,12 +3,15 @@ import Faq from "@/components/faq";
 
 export default function Home() {
   return (
-    <ul>
-      {faqs.map((faq) => (
-        <li key={faq.question}>
-          <Faq {...faq} />
-        </li>
-      ))}
-    </ul>
+    <>
+      <h1 className="text-display">FAQs</h1>
+      <ul>
+        {faqs.map((faq) => (
+          <li key={faq.question}>
+            <Faq {...faq} />
+          </li>
+        ))}
+      </ul>
+    </>
   );
 }
