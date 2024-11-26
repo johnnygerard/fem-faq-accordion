@@ -26,6 +26,13 @@ export default {
             fontWeight: "400",
           },
         ],
+        "body-dt": [
+          "1rem",
+          {
+            lineHeight: "150%",
+            fontWeight: "400",
+          },
+        ],
         title: [
           "1rem",
           {
@@ -33,8 +40,22 @@ export default {
             fontWeight: "600",
           },
         ],
+        "title-dt": [
+          "1.125rem",
+          {
+            lineHeight: "normal",
+            fontWeight: "600",
+          },
+        ],
         display: [
           "2rem",
+          {
+            lineHeight: "normal",
+            fontWeight: "700",
+          },
+        ],
+        "display-dt": [
+          "3.5rem",
           {
             lineHeight: "normal",
             fontWeight: "700",

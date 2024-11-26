@@ -6,7 +6,7 @@ export default function Faq({ question, answer }: Faq) {
   return (
     <details className="group" name="faq">
       <summary className="flex list-none items-center justify-between">
-        <span className="pr-[1.5rem] text-title text-dark-purple">
+        <span className="md:text-title-dt pr-[1.5rem] text-title text-dark-purple">
           {question}
         </span>
         <div className="shrink-0">
