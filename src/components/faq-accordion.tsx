@@ -22,7 +22,7 @@ export default function FaqAccordion() {
           >
             <Accordion.Header>
               <Accordion.Trigger className="group flex w-full items-center justify-between">
-                <span className="mr-[1.5rem] text-left text-title text-dark-purple hover:text-pink dt:text-title-dt">
+                <span className="mr-[1.5rem] text-left text-title text-dark-purple transition-colors hover:text-pink dt:text-title-dt">
                   {faq.question}
                 </span>
                 <IconPlus className="shrink-0 group-data-[state=open]:hidden" />
