@@ -1,6 +1,8 @@
 import { faqs } from "@/app/faqs";
-import Faq from "@/components/faq";
 import IconStar from "@/components/icon-star";
+import * as Accordion from "@radix-ui/react-accordion";
+import IconPlus from "@/components/icon-plus";
+import IconMinus from "@/components/icon-minus";
 
 export default function FaqAccordion() {
   return (
@@ -11,16 +13,28 @@ export default function FaqAccordion() {
           FAQs
         </h1>
       </div>
-      <ul>
-        {faqs.map((faq) => (
-          <li
-            key={faq.question}
+      <Accordion.Root type="single" collapsible defaultValue="0">
+        {faqs.map((faq, index) => (
+          <Accordion.Item
+            key={index}
+            value={index.toString()}
             className="border-t border-light-pink py-[1.25rem] first:border-none first:pt-0 last:pb-0 dt:py-[1.5rem]"
           >
-            <Faq {...faq} />
-          </li>
+            <Accordion.Header>
+              <Accordion.Trigger className="group flex w-full items-center justify-between">
+                <span className="mr-[1.5rem] text-left text-title text-dark-purple hover:text-pink dt:text-title-dt">
+                  {faq.question}
+                </span>
+                <IconPlus className="shrink-0 group-data-[state=open]:hidden" />
+                <IconMinus className="shrink-0 group-data-[state=closed]:hidden" />
+              </Accordion.Trigger>
+            </Accordion.Header>
+            <Accordion.Content className="mt-[1.5rem] text-pale-purple">
+              {faq.answer}
+            </Accordion.Content>
+          </Accordion.Item>
         ))}
-      </ul>
+      </Accordion.Root>
     </div>
   );
 }
