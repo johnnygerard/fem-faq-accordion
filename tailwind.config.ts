@@ -7,16 +7,6 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    keyframes: {
-      slideDown: {
-        from: { height: "0px" },
-        to: { height: "var(--radix-accordion-content-height)" },
-      },
-      slideUp: {
-        from: { height: "var(--radix-accordion-content-height)" },
-        to: { height: "0px" },
-      },
-    },
     animation: {
       slideDown: "slideDown 300ms cubic-bezier(0.87, 0, 0.13, 1)",
       slideUp: "slideUp 300ms cubic-bezier(0.87, 0, 0.13, 1)",
@@ -31,9 +21,6 @@ export default {
       "pale-purple": "#8B6990",
       pink: "#AD28EB",
       white: "#FFFFFF",
-    },
-    screens: {
-      dt: "48em",
     },
     fontFamily: {
       sans: ["var(--font-work-sans)"],
@@ -81,6 +68,19 @@ export default {
           fontWeight: "700",
         },
       ],
+    },
+    keyframes: {
+      slideDown: {
+        from: { height: "0px" },
+        to: { height: "var(--radix-accordion-content-height)" },
+      },
+      slideUp: {
+        from: { height: "var(--radix-accordion-content-height)" },
+        to: { height: "0px" },
+      },
+    },
+    screens: {
+      dt: "48em",
     },
   },
   plugins: [],
