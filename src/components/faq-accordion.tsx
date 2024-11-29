@@ -29,8 +29,8 @@ export default function FaqAccordion() {
                 <IconMinus className="shrink-0 group-data-[state=closed]:hidden" />
               </Accordion.Trigger>
             </Accordion.Header>
-            <Accordion.Content className="mt-[1.5rem] text-pale-purple">
-              {faq.answer}
+            <Accordion.Content className="data-[state=closed]:animate-slideUp data-[state=open]:animate-slideDown overflow-hidden">
+              <div className="mt-[1.5rem] text-pale-purple">{faq.answer}</div>
             </Accordion.Content>
           </Accordion.Item>
         ))}
