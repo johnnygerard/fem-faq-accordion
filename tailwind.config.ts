@@ -7,6 +7,10 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    animation: {
+      slideDown: "slideDown 300ms cubic-bezier(0.87, 0, 0.13, 1)",
+      slideUp: "slideUp 300ms cubic-bezier(0.87, 0, 0.13, 1)",
+    },
     backgroundImage: {
       "mobile-pattern": "url('/images/background-pattern-mobile.svg')",
       "desktop-pattern": "url('/images/background-pattern-desktop.svg')",
@@ -18,57 +22,65 @@ export default {
       pink: "#AD28EB",
       white: "#FFFFFF",
     },
+    fontFamily: {
+      sans: ["var(--font-work-sans)"],
+    },
+    fontSize: {
+      body: [
+        "0.875rem",
+        {
+          lineHeight: "150%",
+          fontWeight: "400",
+        },
+      ],
+      "body-dt": [
+        "1rem",
+        {
+          lineHeight: "150%",
+          fontWeight: "400",
+        },
+      ],
+      title: [
+        "1rem",
+        {
+          lineHeight: "normal",
+          fontWeight: "600",
+        },
+      ],
+      "title-dt": [
+        "1.125rem",
+        {
+          lineHeight: "normal",
+          fontWeight: "600",
+        },
+      ],
+      display: [
+        "2rem",
+        {
+          lineHeight: "normal",
+          fontWeight: "700",
+        },
+      ],
+      "display-dt": [
+        "3.5rem",
+        {
+          lineHeight: "normal",
+          fontWeight: "700",
+        },
+      ],
+    },
+    keyframes: {
+      slideDown: {
+        from: { height: "0px" },
+        to: { height: "var(--radix-accordion-content-height)" },
+      },
+      slideUp: {
+        from: { height: "var(--radix-accordion-content-height)" },
+        to: { height: "0px" },
+      },
+    },
     screens: {
       dt: "48em",
-    },
-    extend: {
-      fontFamily: {
-        sans: ["var(--font-work-sans)"],
-      },
-      fontSize: {
-        body: [
-          "0.875rem",
-          {
-            lineHeight: "150%",
-            fontWeight: "400",
-          },
-        ],
-        "body-dt": [
-          "1rem",
-          {
-            lineHeight: "150%",
-            fontWeight: "400",
-          },
-        ],
-        title: [
-          "1rem",
-          {
-            lineHeight: "normal",
-            fontWeight: "600",
-          },
-        ],
-        "title-dt": [
-          "1.125rem",
-          {
-            lineHeight: "normal",
-            fontWeight: "600",
-          },
-        ],
-        display: [
-          "2rem",
-          {
-            lineHeight: "normal",
-            fontWeight: "700",
-          },
-        ],
-        "display-dt": [
-          "3.5rem",
-          {
-            lineHeight: "normal",
-            fontWeight: "700",
-          },
-        ],
-      },
     },
   },
   plugins: [],
