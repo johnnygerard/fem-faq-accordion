@@ -35,54 +35,52 @@ export default {
     screens: {
       dt: "48em",
     },
-    extend: {
-      fontFamily: {
-        sans: ["var(--font-work-sans)"],
-      },
-      fontSize: {
-        body: [
-          "0.875rem",
-          {
-            lineHeight: "150%",
-            fontWeight: "400",
-          },
-        ],
-        "body-dt": [
-          "1rem",
-          {
-            lineHeight: "150%",
-            fontWeight: "400",
-          },
-        ],
-        title: [
-          "1rem",
-          {
-            lineHeight: "normal",
-            fontWeight: "600",
-          },
-        ],
-        "title-dt": [
-          "1.125rem",
-          {
-            lineHeight: "normal",
-            fontWeight: "600",
-          },
-        ],
-        display: [
-          "2rem",
-          {
-            lineHeight: "normal",
-            fontWeight: "700",
-          },
-        ],
-        "display-dt": [
-          "3.5rem",
-          {
-            lineHeight: "normal",
-            fontWeight: "700",
-          },
-        ],
-      },
+    fontFamily: {
+      sans: ["var(--font-work-sans)"],
+    },
+    fontSize: {
+      body: [
+        "0.875rem",
+        {
+          lineHeight: "150%",
+          fontWeight: "400",
+        },
+      ],
+      "body-dt": [
+        "1rem",
+        {
+          lineHeight: "150%",
+          fontWeight: "400",
+        },
+      ],
+      title: [
+        "1rem",
+        {
+          lineHeight: "normal",
+          fontWeight: "600",
+        },
+      ],
+      "title-dt": [
+        "1.125rem",
+        {
+          lineHeight: "normal",
+          fontWeight: "600",
+        },
+      ],
+      display: [
+        "2rem",
+        {
+          lineHeight: "normal",
+          fontWeight: "700",
+        },
+      ],
+      "display-dt": [
+        "3.5rem",
+        {
+          lineHeight: "normal",
+          fontWeight: "700",
+        },
+      ],
     },
   },
   plugins: [],
