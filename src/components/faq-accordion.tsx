@@ -20,14 +20,16 @@ export default function FaqAccordion() {
             value={index.toString()}
             className="border-t border-light-pink py-[1.25rem] first:border-none first:pt-0 last:pb-0 dt:py-[1.5rem]"
           >
-            <Accordion.Header>
-              <Accordion.Trigger className="group flex w-full items-center justify-between">
-                <span className="mr-[1.5rem] text-left text-title text-dark-purple transition-colors hover:text-pink dt:text-title-dt">
-                  {question}
-                </span>
-                <IconPlus className="shrink-0 group-data-[state=open]:hidden" />
-                <IconMinus className="shrink-0 group-data-[state=closed]:hidden" />
-              </Accordion.Trigger>
+            <Accordion.Header asChild>
+              <h2>
+                <Accordion.Trigger className="group flex w-full items-center justify-between">
+                  <span className="mr-[1.5rem] text-left text-title text-dark-purple transition-colors hover:text-pink dt:text-title-dt">
+                    {question}
+                  </span>
+                  <IconPlus className="shrink-0 group-data-[state=open]:hidden" />
+                  <IconMinus className="shrink-0 group-data-[state=closed]:hidden" />
+                </Accordion.Trigger>
+              </h2>
             </Accordion.Header>
             <Accordion.Content className="overflow-hidden data-[state=closed]:animate-slideUp data-[state=open]:animate-slideDown">
               <div className="mt-[1.5rem] text-pale-purple">{answer}</div>
