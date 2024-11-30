@@ -34,7 +34,10 @@ export default function RootLayout({
         {/* Background pattern */}
         <div className="absolute -z-10 h-[14.5rem] w-full bg-mobile-pattern bg-cover bg-no-repeat dt:h-[20rem] dt:bg-desktop-pattern" />
         {/* Center page content */}
-        <div className="grid min-h-screen place-items-center px-[1.5rem] py-[2rem] dt:py-[3rem]">
+        <div
+          role="main"
+          className="grid min-h-screen place-items-center px-[1.5rem] py-[2rem] dt:py-[3rem]"
+        >
           {children}
         </div>
         <noscript>
