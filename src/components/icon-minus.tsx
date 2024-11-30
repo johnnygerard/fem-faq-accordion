@@ -6,6 +6,7 @@ export default function IconMinus({ className }: { className: string }) {
       height="31"
       viewBox="0 0 30 31"
       fill="none"
+      aria-hidden="true"
     >
       <title>Hide answer</title>
       <path

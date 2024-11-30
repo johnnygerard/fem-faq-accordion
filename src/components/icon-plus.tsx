@@ -6,6 +6,7 @@ export default function IconPlus({ className }: { className: string }) {
       height="31"
       viewBox="0 0 30 31"
       fill="none"
+      aria-hidden="true"
     >
       <title>Show answer</title>
       <path
