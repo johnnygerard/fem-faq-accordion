@@ -32,7 +32,7 @@ export default function FaqAccordion() {
               </h2>
             </Accordion.Header>
             <Accordion.Content className="overflow-hidden data-[state=closed]:animate-slideUp data-[state=open]:animate-slideDown">
-              <div className="mt-[1.5rem] text-pale-purple">{answer}</div>
+              <p className="mt-[1.5rem] text-pale-purple">{answer}</p>
             </Accordion.Content>
           </Accordion.Item>
         ))}
