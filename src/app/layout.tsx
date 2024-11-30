@@ -8,9 +8,12 @@ const workSans = Work_Sans({
   variable: "--font-work-sans",
 });
 
+const TITLE = "FAQ accordion | Frontend Mentor";
+const DESCRIPTION = "Frontend Mentor FAQ accordion challenge";
+
 export const metadata: Metadata = {
-  title: "FAQ accordion | Frontend Mentor",
-  description: "Frontend Mentor FAQ accordion challenge",
+  title: TITLE,
+  description: DESCRIPTION,
   icons: [
     {
       rel: "icon",
@@ -19,6 +22,13 @@ export const metadata: Metadata = {
       url: "/images/favicon-32x32.png",
     },
   ],
+  openGraph: {
+    type: "website",
+    url: "https://fem-faq-accordion-jgerard.vercel.app/",
+    siteName: "FAQ accordion",
+    title: TITLE,
+    description: DESCRIPTION,
+  },
 };
 
 export default function RootLayout({
