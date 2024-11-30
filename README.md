@@ -3,7 +3,7 @@
 This is my solution to the [FAQ Accordion challenge](https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz)
 from [Frontend Mentor](https://www.frontendmentor.io/).
 
-![project status](https://img.shields.io/badge/status-solution%20published-success?style=for-the-badge)
+[![project status](https://img.shields.io/badge/status-solution%20published-success?style=for-the-badge)](https://www.frontendmentor.io/solutions/faq-accordion-3bNxpis7V3)
 [![live demo](https://img.shields.io/badge/live_demo-blue?style=for-the-badge)](https://fem-faq-accordion-jgerard.vercel.app/)
 [![Lighthouse report](https://img.shields.io/badge/lighthouse-%23F44B21?style=for-the-badge&logo=lighthouse&logoColor=fff)](https://googlechrome.github.io/lighthouse/viewer/?gist=61b7bb01a869e3a5722d987545ebc767)
 
