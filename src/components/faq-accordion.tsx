@@ -1,4 +1,4 @@
-import { faqs } from "@/app/faqs";
+import { faq } from "@/app/faq";
 import IconMinus from "@/components/icon-minus";
 import IconPlus from "@/components/icon-plus";
 import IconStar from "@/components/icon-star";
@@ -10,11 +10,11 @@ export default function FaqAccordion() {
       <div className="mb-[1.5rem] flex items-center gap-[1.5rem] dt:mb-[2rem]">
         <IconStar />
         <h1 className="text-display text-dark-purple dt:text-display-dt">
-          FAQs
+          FAQ
         </h1>
       </div>
       <Accordion.Root type="single" collapsible defaultValue="0">
-        {faqs.map((faq, index) => (
+        {faq.map(({ question, answer }, index) => (
           <Accordion.Item
             key={index}
             value={index.toString()}
@@ -23,14 +23,14 @@ export default function FaqAccordion() {
             <Accordion.Header>
               <Accordion.Trigger className="group flex w-full items-center justify-between">
                 <span className="mr-[1.5rem] text-left text-title text-dark-purple transition-colors hover:text-pink dt:text-title-dt">
-                  {faq.question}
+                  {question}
                 </span>
                 <IconPlus className="shrink-0 group-data-[state=open]:hidden" />
                 <IconMinus className="shrink-0 group-data-[state=closed]:hidden" />
               </Accordion.Trigger>
             </Accordion.Header>
             <Accordion.Content className="overflow-hidden data-[state=closed]:animate-slideUp data-[state=open]:animate-slideDown">
-              <div className="mt-[1.5rem] text-pale-purple">{faq.answer}</div>
+              <div className="mt-[1.5rem] text-pale-purple">{answer}</div>
             </Accordion.Content>
           </Accordion.Item>
         ))}
