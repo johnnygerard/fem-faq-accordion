@@ -1,8 +1,8 @@
 import { faqs } from "@/app/faqs";
+import IconMinus from "@/components/icon-minus";
+import IconPlus from "@/components/icon-plus";
 import IconStar from "@/components/icon-star";
 import * as Accordion from "@radix-ui/react-accordion";
-import IconPlus from "@/components/icon-plus";
-import IconMinus from "@/components/icon-minus";
 
 export default function FaqAccordion() {
   return (
