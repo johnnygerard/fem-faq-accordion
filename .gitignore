@@ -7,3 +7,6 @@
 
 # TypeScript
 /tsconfig.tsbuildinfo
+
+# Repository for migration
+/fem-faq-accordion/
