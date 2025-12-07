@@ -1,3 +1,4 @@
+import { clsx } from "clsx";
 import { Accordion } from "radix-ui";
 import type { FC } from "react";
 import { IconMinus } from "~/components/svg/icon-minus";
@@ -23,7 +24,12 @@ export const FaqAccordion: FC = () => {
           >
             <Accordion.Header asChild>
               <h2>
-                <Accordion.Trigger className="group flex w-full items-center justify-between">
+                <Accordion.Trigger
+                  className={clsx(
+                    "group flex w-full items-center justify-between",
+                    "-m-1 rounded-md p-1",
+                  )}
+                >
                   <span className="mr-6 text-left text-title text-dark-purple transition-colors hover:text-pink dt:text-title-dt">
                     {question}
                   </span>

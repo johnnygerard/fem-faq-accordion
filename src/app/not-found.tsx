@@ -1,3 +1,4 @@
+import { clsx } from "clsx";
 import type { Metadata } from "next";
 import Link from "next/link";
 import type { FC } from "react";
@@ -14,7 +15,10 @@ const NotFound: FC = () => {
       </h1>
       <p>Sorry, the page you are looking for does not exist.</p>
       <Link
-        className="text-title text-dark-purple transition-colors hover:text-pink dt:text-title-dt"
+        className={clsx(
+          "text-title text-dark-purple transition-colors dt:text-title-dt",
+          "-m-1 rounded-md p-1 hover:text-pink",
+        )}
         href="/"
       >
         Back to Home
