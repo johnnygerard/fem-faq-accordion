@@ -44,12 +44,9 @@ const RootLayout: FC<Props> = ({ children }) => {
         {/* Background pattern */}
         <div className="absolute -z-10 h-58 w-full bg-mobile-pattern bg-cover bg-no-repeat dt:h-80 dt:bg-desktop-pattern" />
         {/* Center page content */}
-        <div
-          role="main"
-          className="grid min-h-screen place-items-center px-6 py-8 dt:py-12"
-        >
+        <main className="grid min-h-screen place-items-center px-6 py-8 dt:py-12">
           {children}
-        </div>
+        </main>
       </body>
     </html>
   );
