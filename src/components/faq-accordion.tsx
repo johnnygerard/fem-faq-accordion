@@ -3,7 +3,7 @@ import type { FC } from "react";
 import { IconMinus } from "~/components/svg/icon-minus";
 import { IconPlus } from "~/components/svg/icon-plus";
 import { IconStar } from "~/components/svg/icon-star";
-import faq from "~data/faq.json";
+import { faq } from "~/data/faq";
 
 export const FaqAccordion: FC = () => {
   return (
