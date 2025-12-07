@@ -1,7 +1,11 @@
-# Next.js 16 Starter
+# Frontend Mentor | FAQ Accordion
 
-This starter repository facilitates the creation of new Next.js projects using the configuration described below.  
-To learn how to use a GitHub template repository, check out [Creating a repository from a template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+This is my solution to the [FAQ Accordion challenge](https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz)
+from [Frontend Mentor](https://www.frontendmentor.io/).
+
+[![project status](https://img.shields.io/badge/status-solution%20published-success?style=for-the-badge)](https://www.frontendmentor.io/solutions/faq-accordion-3bNxpis7V3)
+[![live demo](https://img.shields.io/badge/live_demo-blue?style=for-the-badge)](https://fem-faq-accordion-jgerard.vercel.app/)
+[![Lighthouse report](https://img.shields.io/badge/lighthouse-%23F44B21?style=for-the-badge&logo=lighthouse&logoColor=fff)](https://googlechrome.github.io/lighthouse/viewer/?gist=61b7bb01a869e3a5722d987545ebc767)
 
 ## Tech Stack
 
@@ -9,7 +13,12 @@ To learn how to use a GitHub template repository, check out [Creating a reposito
 
 - **UI library**: [React 19](https://react.dev/)
 - **Framework**: [Next.js 16](https://nextjs.org/)
+- **Headless UI library**: [Radix UI](https://www.radix-ui.com/primitives)
 - **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
+
+### Backend
+
+- **CDN**: [Vercel](https://vercel.com/docs/cdn)
 
 ## How to Update
 
@@ -28,6 +37,16 @@ npm install --save-exact --save-dev prettier@latest prettier-plugin-tailwindcss@
 - **Formatter**: [Prettier](https://prettier.io/)
 - **Linter**: [ESLint](https://eslint.org/)
 - **AI assistant**: [GitHub Copilot](https://github.com/features/copilot)
+
+## Screenshots
+
+### Mobile Home Page
+
+![](docs/screenshots/mobile.png)
+
+### Desktop Home Page
+
+![](docs/screenshots/desktop.png)
 
 ## Copyright
 
