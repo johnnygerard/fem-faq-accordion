@@ -1,5 +1,5 @@
-import FaqAccordion from "@/components/faq-accordion";
+import type { FC } from "react";
+import { FaqAccordion } from "~/components/faq-accordion";
 
-export default function Home() {
-  return <FaqAccordion />;
-}
+const HomePage: FC = () => <FaqAccordion />;
+export default HomePage;

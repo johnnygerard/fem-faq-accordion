@@ -1,13 +1,15 @@
-import { faq } from "@/app/faq";
-import IconMinus from "@/components/icon-minus";
-import IconPlus from "@/components/icon-plus";
-import IconStar from "@/components/icon-star";
-import * as Accordion from "@radix-ui/react-accordion";
+import { clsx } from "clsx";
+import { Accordion } from "radix-ui";
+import type { FC } from "react";
+import { IconMinus } from "~/components/svg/icon-minus";
+import { IconPlus } from "~/components/svg/icon-plus";
+import { IconStar } from "~/components/svg/icon-star";
+import { faq } from "~/data/faq";
 
-export default function FaqAccordion() {
+export const FaqAccordion: FC = () => {
   return (
-    <div className="w-full rounded-[0.5rem] bg-white p-[1.5rem] shadow-[0px_32px_56px_0px_rgba(80,0,118,0.10)] max-dt:max-w-[24rem] dt:w-[37.5rem] dt:rounded-[1rem] dt:p-[2.5rem]">
-      <div className="mb-[1.5rem] flex items-center gap-[1.5rem] dt:mb-[2rem]">
+    <div className="w-full rounded-lg bg-white p-6 shadow-[0px_32px_56px_0px_rgba(80,0,118,0.10)] max-dt:max-w-[24rem] dt:w-150 dt:rounded-2xl dt:p-10">
+      <div className="mb-6 flex items-center gap-6 dt:mb-8">
         <IconStar />
         <h1 className="text-display text-dark-purple dt:text-display-dt">
           FAQ
@@ -18,12 +20,17 @@ export default function FaqAccordion() {
           <Accordion.Item
             key={index}
             value={index.toString()}
-            className="border-t border-light-pink py-[1.25rem] first:border-none first:pt-0 last:pb-0 dt:py-[1.5rem]"
+            className="border-t border-light-pink py-5 first:border-none first:pt-0 last:pb-0 dt:py-6"
           >
             <Accordion.Header asChild>
               <h2>
-                <Accordion.Trigger className="group flex w-full items-center justify-between">
-                  <span className="mr-[1.5rem] text-left text-title text-dark-purple transition-colors hover:text-pink dt:text-title-dt">
+                <Accordion.Trigger
+                  className={clsx(
+                    "group flex w-full items-center justify-between",
+                    "-m-1 rounded-md p-1",
+                  )}
+                >
+                  <span className="mr-6 text-left text-title text-dark-purple transition-colors hover:text-pink dt:text-title-dt">
                     {question}
                   </span>
                   <IconPlus className="shrink-0 group-data-[state=open]:hidden" />
@@ -31,12 +38,12 @@ export default function FaqAccordion() {
                 </Accordion.Trigger>
               </h2>
             </Accordion.Header>
-            <Accordion.Content className="overflow-hidden data-[state=closed]:animate-slideUp data-[state=open]:animate-slideDown">
-              <p className="mt-[1.5rem] text-pale-purple">{answer}</p>
+            <Accordion.Content className="overflow-hidden data-[state=closed]:animate-slide-up data-[state=open]:animate-slide-down">
+              <p className="mt-6 text-pale-purple">{answer}</p>
             </Accordion.Content>
           </Accordion.Item>
         ))}
       </Accordion.Root>
     </div>
   );
-}
+};

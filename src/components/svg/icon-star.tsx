@@ -1,7 +1,9 @@
-export default function IconStar() {
+import type { FC } from "react";
+
+export const IconStar: FC = () => {
   return (
     <svg
-      className="h-auto w-[1.5rem] dt:w-[2.5rem]"
+      className="h-auto w-6 dt:w-10"
       width="24"
       height="25"
       viewBox="0 0 24 25"
@@ -13,4 +15,4 @@ export default function IconStar() {
       />
     </svg>
   );
-}
+};

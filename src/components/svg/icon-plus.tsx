@@ -1,4 +1,10 @@
-export default function IconPlus({ className }: { className: string }) {
+import type { FC } from "react";
+
+type Props = {
+  className: string;
+};
+
+export const IconPlus: FC<Props> = ({ className }) => {
   return (
     <svg
       className={className}
@@ -15,4 +21,4 @@ export default function IconPlus({ className }: { className: string }) {
       />
     </svg>
   );
-}
+};

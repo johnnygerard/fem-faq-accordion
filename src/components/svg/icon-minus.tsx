@@ -1,4 +1,10 @@
-export default function IconMinus({ className }: { className: string }) {
+import type { FC } from "react";
+
+type Props = {
+  className: string;
+};
+
+export const IconMinus: FC<Props> = ({ className }) => {
   return (
     <svg
       className={className}
@@ -15,4 +21,4 @@ export default function IconMinus({ className }: { className: string }) {
       />
     </svg>
   );
-}
+};

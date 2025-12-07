@@ -3,3 +3,10 @@
 # Next.js
 /.next/
 /next-env.d.ts
+/out/
+
+# TypeScript
+/tsconfig.tsbuildinfo
+
+# Repository for migration
+/fem-faq-accordion/
